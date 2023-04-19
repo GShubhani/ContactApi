@@ -16,6 +16,9 @@ router.route("/register").post(registerContact)
 router.route("/login").post(loginContact)
 
 router.route("/current").get(tokenhandler,currentContact)
+router.route("/apit6yg").get((request,response)=>{
+    response.send("hello dear")
+})
 
 // router.route("/").get(getContacts)
 // router.route("/").post(postContact)
